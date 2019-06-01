@@ -22,7 +22,7 @@ function currentLine(currentQueue) {
       message=`${message} ${i+1}. ${currentQueue[i]}, `
       console.log(message)
     }
-    message=`${message} ${currentQueue.length}. ${currentQueue[currentQueue.length]}`
+    message=`${message} ${currentQueue.length}. ${currentQueue.slice(-1)}`
     console.log(message)
     return message
   }
