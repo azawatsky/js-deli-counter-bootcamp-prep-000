@@ -8,6 +8,6 @@ function nowServing(katzDeliLine) {
     return 'There is nobody waiting to be served!'
   } else {
     return katzDeliLine[0]
-    katzDeliLine.slice(1)
+    katzDeliLine=katzDeliLine.slice(1)
   }
 }
