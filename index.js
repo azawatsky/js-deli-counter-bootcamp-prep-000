@@ -20,6 +20,7 @@ function currentLine(currentQueue) {
     var i
     for (i=0;i<currentQueue.length;i++) {
       message.push(`${i+1}. ${currentQueue[i]}, `)
+      console.log(message)
     }
     return message
   }
