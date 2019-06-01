@@ -19,7 +19,8 @@ function currentLine(currentQueue) {
     var message=['The line is currently: ']
     var i
     for (i=0;i<currentQueue.length;i++) {
-      
+      message.push(`${i+1}. ${currentQueue[i]}, `)
     }
+    return message
   }
 }
