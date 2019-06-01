@@ -12,4 +12,14 @@ function nowServing(katzDeliLine) {
   }
 }
 
-function currentLine(katzDeliLine)
+function currentLine(currentQueue) {
+  if (currentQueue.length===0) {
+    return 'The line is currently empty.'
+  } else {
+    var message=['The line is currently: ']
+    var i
+    for (i=0;i<currentQueue.length;i++) {
+      
+    }
+  }
+}
