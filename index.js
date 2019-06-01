@@ -20,10 +20,8 @@ function currentLine(currentQueue) {
     var i
     for (i=0;i<currentQueue.length-1;i++) {
       message=`${message} ${i+1}. ${currentQueue[i]},`
-      console.log(message)
     }
     message=`${message} ${currentQueue.length}. ${currentQueue.slice(-1)}`
-    console.log(message)
     return message
   }
 }
