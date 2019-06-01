@@ -18,10 +18,12 @@ function currentLine(currentQueue) {
   } else {
     var message=['The line is currently: ']
     var i
-    for (i=0;i<currentQueue.length;i++) {
-      message.push(`${i+1}. ${currentQueue[i]}, `)
+    for (i=0;i<currentQueue.length-1;i++) {
+      message=`${message} ${i+1}. ${currentQueue[i]}, `
       console.log(message)
     }
+    message=`${message} ${currentQueue.length}. ${currentQueue[currentQueue.length]}`
+    console.log(message)
     return message
   }
 }
