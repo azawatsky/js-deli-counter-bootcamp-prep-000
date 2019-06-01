@@ -11,3 +11,5 @@ function nowServing(katzDeliLine) {
     return `Currently serving ${nextInLine}.`
   }
 }
+
+function currentLine(katzDeliLine)
