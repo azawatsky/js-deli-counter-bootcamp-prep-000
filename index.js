@@ -19,7 +19,7 @@ function currentLine(currentQueue) {
     var message=['The line is currently:']
     var i
     for (i=0;i<currentQueue.length-1;i++) {
-      message=`${message} ${i+1}. ${currentQueue[i]}, `
+      message=`${message} ${i+1}. ${currentQueue[i]},`
       console.log(message)
     }
     message=`${message} ${currentQueue.length}. ${currentQueue.slice(-1)}`
